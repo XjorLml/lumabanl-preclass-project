@@ -5,12 +5,11 @@
 #  Print on console the result.
 
 def full_name(name)
-
+  full = ""
   name.each do|key, value|
-    puts "fname: #{key}, lname: #{value}"
-    full = value + value
-    return full
+    full = full + " " + value
   end
+  return full
 end
 
 p full_name({fname: 'Lemnuel',  mname: 'Saway', lname: 'Lumaban'})
